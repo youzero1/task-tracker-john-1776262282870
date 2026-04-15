@@ -46,14 +46,14 @@ export default function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemP
   };
 
   return (
-    <div className="flex items-center gap-3 px-6 py-4 group hover:bg-gray-50 transition-colors">
+    <div className="flex items-center gap-3 px-6 py-4 group hover:bg-orange-50 transition-colors">
       {/* Checkbox */}
       <button
         onClick={() => onToggle(todo.id)}
         className={`flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${
           todo.completed
-            ? 'bg-gradient-to-r from-violet-500 to-indigo-500 border-transparent'
-            : 'border-gray-300 hover:border-violet-400'
+            ? 'bg-gradient-to-r from-orange-400 to-orange-500 border-transparent'
+            : 'border-gray-300 hover:border-orange-400'
         }`}
         aria-label={todo.completed ? 'Mark as incomplete' : 'Mark as complete'}
       >
@@ -73,7 +73,7 @@ export default function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemP
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEditValue(e.target.value)}
           onBlur={handleEditSubmit}
           onKeyDown={handleKeyDown}
-          className="flex-1 px-2 py-1 text-sm border border-violet-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-400 text-gray-700"
+          className="flex-1 px-2 py-1 text-sm border border-orange-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 text-gray-700"
         />
       ) : (
         <span

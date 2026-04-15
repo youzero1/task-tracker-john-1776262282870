@@ -64,11 +64,11 @@ export default function Home() {
   const completedTodoCount = todos.filter((t) => t.completed).length;
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-violet-100 via-purple-50 to-indigo-100 py-12 px-4">
+    <main className="min-h-screen bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-100 py-12 px-4">
       <div className="max-w-lg mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 mb-2">
+          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500 mb-2">
             My Todos
           </h1>
           <p className="text-gray-500 text-sm">
@@ -103,7 +103,7 @@ export default function Home() {
             {todos.length === 0 ? (
               <div className="flex flex-col items-center justify-center py-16 text-gray-400">
                 <svg
-                  className="w-16 h-16 mb-4 text-gray-200"
+                  className="w-16 h-16 mb-4 text-orange-200"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
